@@ -9,6 +9,11 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { AboutComponent } from './components/about/about.component';
 import { EventsComponent } from './components/events/events.component';
 import { HomeComponent } from './components/home/home.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { UserComponent } from './components/user/user.component';
+import { FormsModule } from '@angular/forms';
+import { AdminpanelComponent } from './components/admin/adminpanel/adminpanel.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,11 +23,16 @@ import { HomeComponent } from './components/home/home.component';
     NavbarComponent,
     AboutComponent,
     EventsComponent,
-    HomeComponent
+    HomeComponent,
+    AdminComponent,
+    UserComponent,
+    AdminpanelComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
